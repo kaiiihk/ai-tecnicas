@@ -5,14 +5,22 @@
     --cor-destaque: #2BDEFD;
     --cor-texto: #D7F9FF;
 }
-  
+
+@keyframes mudarCor {
+    0% { background-color: #0088ff; }
+    25% { background-color: #ff0000; }
+    50% { background-color: #001eff; }
+    75% { background-color: #2BDEFD; }
+    100% { background-color: #ff0000; }
+}
+
 body {
-    background-color: var(--cor-fundo);
     color: var(--cor-texto);
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    animation: mudarCor 10s infinite;
 }
 
 .caixa-principal{
